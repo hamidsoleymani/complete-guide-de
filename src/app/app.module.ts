@@ -1,13 +1,16 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header.component';
-import { RecipeComponent } from './recipe/recipe.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
-import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
-import { RecipeItemComponent } from './recipe/recipe-list/recipe-item.component';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './header.component';
+import {RecipeComponent} from './recipe/recipe.component';
+import {ShoppingListComponent} from './shopping-list/shopping-list.component';
+import {RecipeListComponent} from './recipe/recipe-list/recipe-list.component';
+import {RecipeDetailComponent} from './recipe/recipe-detail/recipe-detail.component';
+import {RecipeItemComponent} from './recipe/recipe-list/recipe-item.component';
+import { ShoppingListAddComponent } from './shopping-list/shopping-list-add.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { RecipeItemComponent } from './recipe/recipe-list/recipe-item.component'
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
+    ShoppingListAddComponent,
+    DirectiveComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule
@@ -25,4 +31,5 @@ import { RecipeItemComponent } from './recipe/recipe-list/recipe-item.component'
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

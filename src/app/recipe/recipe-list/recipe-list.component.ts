@@ -14,6 +14,7 @@ export class RecipeListComponent {
   constructor() {
   }
 
+  // tslint:disable-next-line:typedef
   onSelected(recipe: Recipe) {
     this.recipeSelected.emit(recipe);
   }
